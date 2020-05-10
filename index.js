@@ -20,7 +20,7 @@ app.get('/api', async (req, res) => {
 
 app.listen(port, () => {
   MongoClient.connect(
-    'mongodb://localhost:27017/cice-back',
+    'mongodb://mongo:27017/cice-back',
     { useUnifiedTopology: true },
     (error, mongoClient) => {
       if (error) {
